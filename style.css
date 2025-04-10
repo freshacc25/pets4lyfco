@@ -56,7 +56,7 @@ button.normal {
 
 
 button.white {
-    font-size: 13x;
+    font-size: 13px;
     font-weight: 600;
     padding: 11px 18px;
     color: #fff;
@@ -223,9 +223,9 @@ button.white {
 
 #product1 .pro-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding-top: 20px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 #product1 .pro {
@@ -551,6 +551,106 @@ footer .copyright{
     text-align: center;
 }
 
+/* Shop Page */
+#page-header {
+    background-image: url("img/seaonalsale.jpg");
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header h2,
+#page-header p {
+    color: #e8f6ea;
+}
+
+#pagination{
+    text-align: center;
+}
+
+#pagination a{
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+
+}
+
+/* Single Product */
+
+#prodetails {
+    display: flex;
+    margin-top: 20px;
+}
+
+#prodetails .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+}
+
+.small-img-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetails .single-pro-details {
+    width: 50%;
+    padding: 30px;
+}
+
+#prodetails .single-pro-details h4 {
+    padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details h2 {
+    font-size: 26px;
+}
+
+#prodetails .single-pro-details select {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#prodetails .single-pro-details input {
+    width: 50px;
+    height: 47px;
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+rodetails .single-pro-details input:focus {
+    outline: none;
+}
+
+#prodetails .single-pro-details button {
+    background-color: #088178;
+    color: #cdebbc;
+}
+
+#rodetails .single-pro-details span {
+    line-height: 25px;
+}
+
+/* Blog Page */
+
+/* About Page */
+
+/* Contact Page */
+
 #mobile-menu {
     display: none;
     align-items: center;
@@ -679,6 +779,105 @@ footer .copyright{
 
     #lg-bag{
         display: none;
+    }
+
+    #header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    
+    .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    #mobile {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+    
+    #mobile i {
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    #product1 .pro-container {
+        display: flex;
+        padding-top: 20px;
+        flex-wrap: wrap;
+    }
+  }
+
+  @media (max-width: 477px) {
+    #header {
+        padding: 10px 30px;
+    }
+    h1 {
+        font-size: 38 px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    #hero {
+        padding: 0 20px;
+        background-position: 55%;
+    }
+    #feature {
+        justify-content: space-between;
+    }
+    #feature .fe-box {
+        width: 155px;
+        margin: 0 0 15px 0;
+    }
+    #product1 .pro {
+        width: 100%;
+    }
+    #banner {
+        height: 40vh;
+    }
+    #sm-banner .banner-box {
+        height: 40vh;
+    }
+    #sm-banner .banner-box2 {
+        margin-top: 20px;
+    }
+    #banner3 .banner-box {
+        width: 100%;
+    }
+    #newsletter {
+        padding: 40px 20px;
+    }
+    #newletter .form {
+        width: 100%;
+    }
+    footer .copyright {
+        text-align: start;
+    }
+
+    #product1 .pro-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* Single Product */
+    #prodetails {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #prodetails .single-pro-image {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    #prodetails .single-pro-details {
+        width: 100%;
     }
   }
   
