@@ -225,7 +225,7 @@ button.white {
     display: flex;
     justify-content: center;
     padding-top: 20px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 #product1 .pro {
